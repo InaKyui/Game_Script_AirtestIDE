@@ -1,0 +1,960 @@
+{
+    "setting": {
+        "adb_path": "F:\\LDPlayer\\LDPlayer4.0\\adb.exe",
+        "package_name": "com.bilibili.priconne",
+        "activity_name": "com.bilibili.permission.PermissionActivity",
+        "resolution": {
+            "x": 1920,
+            "y": 1080,
+            "dpi": 280
+        },
+        "task": {
+            "initial_task": [
+                "initial"
+            ],
+            "start_task": [
+            ],
+            "random_task": [
+                "shopping",
+                "mission_dungeons",
+                "mission_arena"
+            ],
+            "end_task": [
+                "mission_complete",
+                "mission_quest"
+            ]
+        }
+    },
+    "coordinate": {
+        "initial": {
+            "blank_button": {
+                "x": 0.0,
+                "y": 0.0,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 10,
+                "action": "click"
+            }
+        },
+        "game_start": {
+            "blank_button": {
+                "x": 0.0156,
+                "y": 0.1875,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 10,
+                "action": "click"
+            },
+            "skip_button": {
+                "x": 0.9492,
+                "y": 0.0694,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 15,
+                "action": "click"
+            },
+            "close_button": {
+                "x": 0.5,
+                "y": 0.8889,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 5,
+                "action": "click"
+            }
+        },
+        "receive_energy": {
+            "home_button": {
+                "x": 0.6484,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "receive_button": {
+                "x": 0.9375,
+                "y": 0.7847,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.0556,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            }
+        },
+        "shopping": {
+            "main_button": {
+                "x": 0.0938,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "shop_button": {
+                "x": 0.6406,
+                "y": 0.7986,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "first_cargo": {
+                "x": 0.4023,
+                "y": 0.2778,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 1,
+                "action": "click"
+            },
+            "second_cargo": {
+                "x": 0.582,
+                "y": 0.2778,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 1,
+                "action": "click"
+            },
+            "third_cargo": {
+                "x": 0.7578,
+                "y": 0.2778,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 1,
+                "action": "click"
+            },
+            "fourth_cargo": {
+                "x": 0.9375,
+                "y": 0.2778,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 1,
+                "action": "click"
+            },
+            "buy_button": {
+                "x": 0.8203,
+                "y": 0.8125,
+                "error_x": 100,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "ok_button": {
+                "x": 0.6133,
+                "y": 0.8819,
+                "error_x": 50,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.1445,
+                "y": 0.2917,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            }
+        },
+        "mission_guild": {
+            "main_button": {
+                "x": 0.0938,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "guild_button": {
+                "x": 0.7188,
+                "y": 0.7986,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "friend_button": {
+                "x": 0.2461,
+                "y": 0.6458,
+                "error_x": 15,
+                "error_y": 5,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "like_button": {
+                "x": 0.8594,
+                "y": 0.5833,
+                "error_x": 10,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            }
+        },
+        "mission_gashapon": {
+            "gashapon_button": {
+                "x": 0.7812,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "normal_button": {
+                "x": 0.9336,
+                "y": 0.1389,
+                "error_x": 10,
+                "error_y": 5,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "free_button": {
+                "x": 0.75,
+                "y": 0.6389,
+                "error_x": 30,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "ok_button": {
+                "x": 0.6133,
+                "y": 0.6806,
+                "error_x": 15,
+                "error_y": 5,
+                "idle_time": 10,
+                "action": "click"
+            },
+            "receive_button": {
+                "x": 0.5,
+                "y": 0.8194,
+                "error_x": 15,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            }
+        },
+        "mission_explore": {
+            "adventure_button": {
+                "x": 0.5,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "explore_button": {
+                "x": 0.7656,
+                "y": 0.2569,
+                "error_x": 15,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "exp_button": {
+                "x": 0.6094,
+                "y": 0.4444,
+                "error_x": 15,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "level_button": {
+                "x": 0.75,
+                "y": 0.2778,
+                "error_x": 20,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "attack_button": {
+                "x": 0.7891,
+                "y": 0.6111,
+                "error_x": 15,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "ok_button": {
+                "x": 0.6133,
+                "y": 0.6806,
+                "error_x": 15,
+                "error_y": 5,
+                "idle_time": 7,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            }
+        },
+        "mission_dungeons": {
+            "adventure_button": {
+                "x": 0.5,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "dungeons_button": {
+                "x": 0.9141,
+                "y": 0.2569,
+                "error_x": 15,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "last_extreme_button": {
+                "x": 0.8633,
+                "y": 0.4514,
+                "error_x": 30,
+                "error_y": 30,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "ok_button": {
+                "x": 0.6133,
+                "y": 0.7986,
+                "error_x": 15,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "first_enemy": {
+                "x": 0.707,
+                "y": 0.5,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "second_enemy": {
+                "x": 0.4961,
+                "y": 0.4792,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "third_enemy": {
+                "x": 0.2305,
+                "y": 0.4514,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "fourth_enemy": {
+                "x": 0.5117,
+                "y": 0.4653,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "challenge_button": {
+                "x": 0.875,
+                "y": 0.8472,
+                "error_x": 15,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "my_team_button": {
+                "x": 0.8984,
+                "y": 0.1667,
+                "error_x": 15,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "call_button": {
+                "x": 0.8242,
+                "y": 0.3819,
+                "error_x": 30,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "attack_button": {
+                "x": 0.8711,
+                "y": 0.8403,
+                "error_x": 15,
+                "error_y": 10,
+                "idle_time": 35,
+                "action": "click"
+            },
+            "next_button": {
+                "x": 0.8672,
+                "y": 0.9097,
+                "error_x": 30,
+                "error_y": 5,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 7,
+                "action": "click"
+            },
+            "retreat_button": {
+                "x": 0.8477,
+                "y": 0.7917,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "comfirm_button": {
+                "x": 0.6133,
+                "y": 0.6875,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            }
+        },
+        "mission_arena": {
+            "adventure_button": {
+                "x": 0.5,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "arena_button": {
+                "x": 0.6055,
+                "y": 0.75,
+                "error_x": 50,
+                "error_y": 20,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "receive_button": {
+                "x": 0.3086,
+                "y": 0.6319,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "first_person": {
+                "x": 0.6289,
+                "y": 0.3264,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "attack_button": {
+                "x": 0.8711,
+                "y": 0.8333,
+                "error_x": 30,
+                "error_y": 10,
+                "idle_time": 7,
+                "action": "click"
+            },
+            "skip_button": {
+                "x": 0.9531,
+                "y": 0.6597,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 7,
+                "action": "click"
+            },
+            "next_button": {
+                "x": 0.8672,
+                "y": 0.9097,
+                "error_x": 30,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            }
+        },
+        "mission_princess_arena": {
+            "adventure_button": {
+                "x": 0.5,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "princess_arena_button": {
+                "x": 0.8594,
+                "y": 0.75,
+                "error_x": 50,
+                "error_y": 20,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "receive_button": {
+                "x": 0.3086,
+                "y": 0.6319,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "first_person": {
+                "x": 0.6289,
+                "y": 0.3264,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "next_team_button": {
+                "x": 0.8711,
+                "y": 0.8333,
+                "error_x": 30,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "attack_button": {
+                "x": 0.8711,
+                "y": 0.8333,
+                "error_x": 30,
+                "error_y": 10,
+                "idle_time": 10,
+                "action": "click"
+            },
+            "skip_button": {
+                "x": 0.9531,
+                "y": 0.6597,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 10,
+                "action": "click"
+            },
+            "next_button": {
+                "x": 0.8398,
+                "y": 0.9097,
+                "error_x": 30,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            }
+        },
+        "mission_complete": {
+            "main_button": {
+                "x": 0.0938,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "mission_button": {
+                "x": 0.8711,
+                "y": 0.7986,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "receive_button": {
+                "x": 0.8789,
+                "y": 0.8125,
+                "error_x": 100,
+                "error_y": 15,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0469,
+                "y": 0.1944,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 3,
+                "action": "click"
+            }
+        },
+        "mission_quest": {
+            "adventure_button": {
+                "x": 0.5,
+                "y": 0.9514,
+                "error_x": 20,
+                "error_y": 15,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "quest_button": {
+                "x": 0.4297,
+                "y": 0.7847,
+                "error_x": 10,
+                "error_y": 10,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "blank_button": {
+                "x": 0.0117,
+                "y": 0.1389,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 10,
+                "action": "click"
+            },
+            "map_button": {
+                "x": 0.582,
+                "y": 0.2708,
+                "error_x": 30,
+                "error_y": 30,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "first_button": {
+                "x": 0.1172,
+                "y": 0.4792,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "second_button": {
+                "x": 0.2266,
+                "y": 0.75,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "third_button": {
+                "x": 0.4258,
+                "y": 0.6736,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "fourth_button": {
+                "x": 0.5781,
+                "y": 0.4861,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "fifth_button": {
+                "x": 0.7031,
+                "y": 0.5833,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "boss_button": {
+                "x": 0.8945,
+                "y": 0.5,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "add_button": {
+                "x": 0.9141,
+                "y": 0.6111,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 1,
+                "action": "click"
+            },
+            "sweep_button": {
+                "x": 0.7891,
+                "y": 0.6181,
+                "error_x": 3,
+                "error_y": 3,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "ok_button": {
+                "x": 0.6133,
+                "y": 0.6875,
+                "error_x": 3,
+                "error_y": 3,
+                "idle_time": 5,
+                "action": "click"
+            },
+            "cancel_button": {
+                "x": 0.6953,
+                "y": 0.8403,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "challenge_button": {
+                "x": 0.875,
+                "y": 0.8611,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "attack_button": {
+                "x": 0.1172,
+                "y": 0.4792,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "next_button": {
+                "x": 0.8633,
+                "y": 0.9028,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "quest_mission_button": {
+                "x": 0.9492,
+                "y": 0.7917,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 3,
+                "action": "click"
+            },
+            "complete_button": {
+                "x": 0.8789,
+                "y": 0.8125,
+                "error_x": 5,
+                "error_y": 5,
+                "idle_time": 1,
+                "action": "click"
+            }
+        }
+    },
+    "step": {
+        "initial": [
+            "blank_button"
+        ],
+        "game_start": [
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "skip_button",
+            "close_button"
+        ],
+        "receive_energy": [
+            "home_button",
+            "receive_button",
+            "blank_button"
+        ],
+        "shopping": [
+            "main_button",
+            "shop_button",
+            "first_cargo",
+            "second_cargo",
+            "third_cargo",
+            "fourth_cargo",
+            "buy_button",
+            "ok_button",
+            "blank_button"
+        ],
+        "mission_guild": [
+            "main_button",
+            "guild_button",
+            "blank_button",
+            "friend_button",
+            "like_button",
+            "blank_button"
+        ],
+        "mission_gashapon": [
+            "gashapon_button",
+            "blank_button",
+            "normal_button",
+            "free_button",
+            "ok_button",
+            "receive_button"
+        ],
+        "mission_explore": [
+            "adventure_button",
+            "explore_button",
+            "exp_button",
+            "level_button",
+            "attack_button",
+            "ok_button",
+            "blank_button",
+            "level_button",
+            "attack_button",
+            "ok_button",
+            "blank_button"
+        ],
+        "mission_dungeons": [
+            "adventure_button",
+            "dungeons_button",
+            "last_extreme_button",
+            "ok_button",
+            "first_enemy",
+            "challenge_button",
+            "my_team_button",
+            "call_button",
+            "attack_button",
+            "next_button",
+            "blank_button",
+            "second_enemy",
+            "challenge_button",
+            "attack_button",
+            "next_button",
+            "blank_button",
+            "third_enemy",
+            "challenge_button",
+            "attack_button",
+            "next_button",
+            "blank_button",
+            "fourth_enemy",
+            "challenge_button",
+            "attack_button",
+            "next_button",
+            "blank_button",
+            "retreat_button",
+            "comfirm_button"
+        ],
+        "mission_arena": [
+            "adventure_button",
+            "arena_button",
+            "blank_button",
+            "receive_button",
+            "blank_button",
+            "first_person",
+            "attack_button",
+            "skip_button",
+            "next_button",
+            "blank_button",
+            "blank_button"
+        ],
+        "mission_princess_arena": [
+            "adventure_button",
+            "princess_arena_button",
+            "blank_button",
+            "receive_button",
+            "blank_button",
+            "first_person",
+            "next_team_button",
+            "next_team_button",
+            "attack_button",
+            "skip_button",
+            "next_button",
+            "blank_button",
+            "blank_button"
+        ],
+        "mission_quest": [
+            "adventure_button",
+            "quest_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "map_button",
+            "first_button",
+            "add_button",
+            "add_button",
+            "sweep_button",
+            "ok_button",
+            "blank_button",
+            "blank_button",
+            "cancel_button",
+            "second_button",
+            "add_button",
+            "add_button",
+            "sweep_button",
+            "ok_button",
+            "blank_button",
+            "blank_button",
+            "cancel_button",
+            "third_button",
+            "add_button",
+            "add_button",
+            "sweep_button",
+            "ok_button",
+            "blank_button",
+            "blank_button",
+            "cancel_button",
+            "fourth_button",
+            "add_button",
+            "add_button",
+            "sweep_button",
+            "ok_button",
+            "blank_button",
+            "blank_button",
+            "cancel_button",
+            "fifth_button",
+            "add_button",
+            "add_button",
+            "sweep_button",
+            "ok_button",
+            "blank_button",
+            "blank_button",
+            "cancel_button",
+            "boss_button",
+            "challenge_button",
+            "attack_button",
+            "next_button",
+            "next_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "blank_button",
+            "quest_mission_button",
+            "complete_button"
+        ],
+        "mission_complete": [
+            "main_button",
+            "mission_button",
+            "receive_button",
+            "blank_button"
+        ]
+    }
+}
