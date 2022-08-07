@@ -103,7 +103,7 @@ def change_member(room):
         time.sleep(1)
     touch(Template("member_confirm.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
     time.sleep(3)
-    if room == "dormitory":
+    if "dormitory" in room:
         if exists(Template("member_confirm_2.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
             touch(Template("member_confirm_2.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
             time.sleep(3)
@@ -249,7 +249,7 @@ if __name__ == '__main__':
     # Load global config
     config = load_config()
     
-    start_game()
-    daily_mission()
+    #start_game()
+    #daily_mission()
     #event_quest()
     

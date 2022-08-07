@@ -450,9 +450,9 @@ if __name__ == '__main__':
     # Load global config
     config = load_config()
     
-    start_game()
-    daily_quest()
-    #exp_quest()
+    #start_game()
+    #daily_quest()
+    exp_quest()
     #event_quest()
     #event_reward()
     
