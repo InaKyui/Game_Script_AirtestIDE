@@ -4,24 +4,28 @@
         "package_name": "com.bilibili.priconne",
         "activity_name": "com.bilibili.permission.PermissionActivity",
         "resolution": {
-            "x": 1920,
-            "y": 1080,
-            "dpi": 280
+            "x": 1280,
+            "y": 720,
+            "dpi": 240
         },
         "task": {
             "initial_task": [
                 "initial"
             ],
             "start_task": [
+                "receive_energy"
             ],
             "random_task": [
                 "shopping",
+                "mission_guild",
+                "mission_gashapon",
+                "mission_explore",
                 "mission_dungeons",
                 "mission_arena"
             ],
             "end_task": [
-                "mission_complete",
-                "mission_quest"
+                "mission_princess_arena",
+                "mission_complete"
             ]
         }
     },
@@ -634,64 +638,48 @@
                 "action": "click"
             },
             "blank_button": {
-                "x": 0.0117,
+                "x": 0.0039,
                 "y": 0.1389,
-                "error_x": 5,
-                "error_y": 5,
+                "error_x": 3,
+                "error_y": 3,
+                "idle_time": 10,
+                "action": "click"
+            },
+            "sec_blank_button": {
+                "x": 0.0781,
+                "y": 0.1389,
+                "error_x": 3,
+                "error_y": 3,
                 "idle_time": 10,
                 "action": "click"
             },
             "map_button": {
-                "x": 0.582,
-                "y": 0.2708,
-                "error_x": 30,
-                "error_y": 30,
+                "x": 0.5781,
+                "y": 0.1458,
+                "error_x": 1,
+                "error_y": 1,
                 "idle_time": 5,
                 "action": "click"
             },
             "first_button": {
-                "x": 0.1172,
-                "y": 0.4792,
+                "x": 0.1211,
+                "y": 0.6528,
                 "error_x": 5,
                 "error_y": 5,
                 "idle_time": 3,
                 "action": "click"
             },
-            "second_button": {
-                "x": 0.2266,
-                "y": 0.75,
-                "error_x": 5,
-                "error_y": 5,
-                "idle_time": 3,
-                "action": "click"
-            },
-            "third_button": {
-                "x": 0.4258,
-                "y": 0.6736,
-                "error_x": 5,
-                "error_y": 5,
-                "idle_time": 3,
-                "action": "click"
-            },
-            "fourth_button": {
-                "x": 0.5781,
-                "y": 0.4861,
-                "error_x": 5,
-                "error_y": 5,
-                "idle_time": 3,
-                "action": "click"
-            },
-            "fifth_button": {
-                "x": 0.7031,
-                "y": 0.5833,
-                "error_x": 5,
-                "error_y": 5,
+            "change_button": {
+                "x": 0.9688,
+                "y": 0.4583,
+                "error_x": 1,
+                "error_y": 1,
                 "idle_time": 3,
                 "action": "click"
             },
             "boss_button": {
-                "x": 0.8945,
-                "y": 0.5,
+                "x": 0.9023,
+                "y": 0.4861,
                 "error_x": 5,
                 "error_y": 5,
                 "idle_time": 3,
@@ -738,26 +726,26 @@
                 "action": "click"
             },
             "attack_button": {
-                "x": 0.1172,
-                "y": 0.4792,
+                "x": 0.8711,
+                "y": 0.8403,
                 "error_x": 5,
                 "error_y": 5,
-                "idle_time": 3,
+                "idle_time": 100,
                 "action": "click"
             },
             "next_button": {
-                "x": 0.8633,
-                "y": 0.9028,
+                "x": 0.8438,
+                "y": 0.9097,
                 "error_x": 5,
                 "error_y": 5,
-                "idle_time": 3,
+                "idle_time": 5,
                 "action": "click"
             },
             "quest_mission_button": {
                 "x": 0.9492,
                 "y": 0.7917,
-                "error_x": 5,
-                "error_y": 5,
+                "error_x": 1,
+                "error_y": 1,
                 "idle_time": 3,
                 "action": "click"
             },
@@ -780,8 +768,10 @@
             "blank_button",
             "blank_button",
             "blank_button",
+            "blank_button",
             "skip_button",
-            "close_button"
+            "close_button",
+            "blank_button"
         ],
         "receive_energy": [
             "home_button",
@@ -902,40 +892,36 @@
             "add_button",
             "sweep_button",
             "ok_button",
-            "blank_button",
-            "blank_button",
-            "cancel_button",
-            "second_button",
+            "sec_blank_button",
+            "sec_blank_button",
+            "change_button",
             "add_button",
             "add_button",
             "sweep_button",
             "ok_button",
-            "blank_button",
-            "blank_button",
-            "cancel_button",
-            "third_button",
+            "sec_blank_button",
+            "sec_blank_button",
+            "change_button",
             "add_button",
             "add_button",
             "sweep_button",
             "ok_button",
-            "blank_button",
-            "blank_button",
-            "cancel_button",
-            "fourth_button",
+            "sec_blank_button",
+            "sec_blank_button",
+            "change_button",
             "add_button",
             "add_button",
             "sweep_button",
             "ok_button",
-            "blank_button",
-            "blank_button",
-            "cancel_button",
-            "fifth_button",
+            "sec_blank_button",
+            "sec_blank_button",
+            "change_button",
             "add_button",
             "add_button",
             "sweep_button",
             "ok_button",
-            "blank_button",
-            "blank_button",
+            "sec_blank_button",
+            "sec_blank_button",
             "cancel_button",
             "boss_button",
             "challenge_button",

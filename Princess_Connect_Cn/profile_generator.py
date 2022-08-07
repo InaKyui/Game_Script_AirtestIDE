@@ -791,26 +791,35 @@ coordinate["action"] = "click"
 coordinate_dic["quest_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 15
+coordinate["x"] = 5
 coordinate["y"] = 100
-coordinate["error_x"] = 5
-coordinate["error_y"] = 5
+coordinate["error_x"] = 3
+coordinate["error_y"] = 3
 coordinate["idle_time"] = 10
 coordinate["action"] = "click"
 coordinate_dic["blank_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 745
-coordinate["y"] = 195
-coordinate["error_x"] = 30
-coordinate["error_y"] = 30
+coordinate["x"] = 100
+coordinate["y"] = 100
+coordinate["error_x"] = 3
+coordinate["error_y"] = 3
+coordinate["idle_time"] = 10
+coordinate["action"] = "click"
+coordinate_dic["sec_blank_button"] = coordinate
+
+coordinate = {}
+coordinate["x"] = 740
+coordinate["y"] = 105
+coordinate["error_x"] = 1
+coordinate["error_y"] = 1
 coordinate["idle_time"] = 5
 coordinate["action"] = "click"
 coordinate_dic["map_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 150
-coordinate["y"] = 345
+coordinate["x"] = 155
+coordinate["y"] = 470
 coordinate["error_x"] = 5
 coordinate["error_y"] = 5
 coordinate["idle_time"] = 3
@@ -818,44 +827,17 @@ coordinate["action"] = "click"
 coordinate_dic["first_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 290
-coordinate["y"] = 540
-coordinate["error_x"] = 5
-coordinate["error_y"] = 5
+coordinate["x"] = 1240
+coordinate["y"] = 330
+coordinate["error_x"] = 1
+coordinate["error_y"] = 1
 coordinate["idle_time"] = 3
 coordinate["action"] = "click"
-coordinate_dic["second_button"] = coordinate
+coordinate_dic["change_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 545
-coordinate["y"] = 485
-coordinate["error_x"] = 5
-coordinate["error_y"] = 5
-coordinate["idle_time"] = 3
-coordinate["action"] = "click"
-coordinate_dic["third_button"] = coordinate
-
-coordinate = {}
-coordinate["x"] = 740
+coordinate["x"] = 1155
 coordinate["y"] = 350
-coordinate["error_x"] = 5
-coordinate["error_y"] = 5
-coordinate["idle_time"] = 3
-coordinate["action"] = "click"
-coordinate_dic["fourth_button"] = coordinate
-
-coordinate = {}
-coordinate["x"] = 900
-coordinate["y"] = 420
-coordinate["error_x"] = 5
-coordinate["error_y"] = 5
-coordinate["idle_time"] = 3
-coordinate["action"] = "click"
-coordinate_dic["fifth_button"] = coordinate
-
-coordinate = {}
-coordinate["x"] = 1145
-coordinate["y"] = 360
 coordinate["error_x"] = 5
 coordinate["error_y"] = 5
 coordinate["idle_time"] = 3
@@ -908,28 +890,28 @@ coordinate["action"] = "click"
 coordinate_dic["challenge_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 150
-coordinate["y"] = 345
+coordinate["x"] = 1115
+coordinate["y"] = 605
 coordinate["error_x"] = 5
 coordinate["error_y"] = 5
-coordinate["idle_time"] = 3
+coordinate["idle_time"] = 100
 coordinate["action"] = "click"
 coordinate_dic["attack_button"] = coordinate
 
 coordinate = {}
-coordinate["x"] = 1105
-coordinate["y"] = 650
+coordinate["x"] = 1080
+coordinate["y"] = 655
 coordinate["error_x"] = 5
 coordinate["error_y"] = 5
-coordinate["idle_time"] = 3
+coordinate["idle_time"] = 5
 coordinate["action"] = "click"
 coordinate_dic["next_button"] = coordinate
 
 coordinate = {}
 coordinate["x"] = 1215
 coordinate["y"] = 570
-coordinate["error_x"] = 5
-coordinate["error_y"] = 5
+coordinate["error_x"] = 1
+coordinate["error_y"] = 1
 coordinate["idle_time"] = 3
 coordinate["action"] = "click"
 coordinate_dic["quest_mission_button"] = coordinate
@@ -968,8 +950,10 @@ step.append("blank_button")
 step.append("blank_button")
 step.append("blank_button")
 step.append("blank_button")
+step.append("blank_button")
 step.append("skip_button")
 step.append("close_button")
+step.append("blank_button")
 
 total_step["game_start"] = step
 
@@ -1126,44 +1110,40 @@ step.append("add_button")
 step.append("add_button")
 step.append("sweep_button")
 step.append("ok_button")
-step.append("blank_button")
-step.append("blank_button")
-step.append("cancel_button")
+step.append("sec_blank_button")
+step.append("sec_blank_button")
+step.append("change_button")
 
-step.append("second_button")
 step.append("add_button")
 step.append("add_button")
 step.append("sweep_button")
 step.append("ok_button")
-step.append("blank_button")
-step.append("blank_button")
-step.append("cancel_button")
+step.append("sec_blank_button")
+step.append("sec_blank_button")
+step.append("change_button")
 
-step.append("third_button")
 step.append("add_button")
 step.append("add_button")
 step.append("sweep_button")
 step.append("ok_button")
-step.append("blank_button")
-step.append("blank_button")
-step.append("cancel_button")
+step.append("sec_blank_button")
+step.append("sec_blank_button")
+step.append("change_button")
 
-step.append("fourth_button")
 step.append("add_button")
 step.append("add_button")
 step.append("sweep_button")
 step.append("ok_button")
-step.append("blank_button")
-step.append("blank_button")
-step.append("cancel_button")
+step.append("sec_blank_button")
+step.append("sec_blank_button")
+step.append("change_button")
 
-step.append("fifth_button")
 step.append("add_button")
 step.append("add_button")
 step.append("sweep_button")
 step.append("ok_button")
-step.append("blank_button")
-step.append("blank_button")
+step.append("sec_blank_button")
+step.append("sec_blank_button")
 step.append("cancel_button")
 
 step.append("boss_button")

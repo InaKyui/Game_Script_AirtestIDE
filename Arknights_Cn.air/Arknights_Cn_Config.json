@@ -1,0 +1,99 @@
+{
+    "resolution": [
+        1920,
+        1080
+    ],
+    "coordinate": {
+        "room": {
+            "center": [
+                0,
+                0
+            ],
+            "trade_a": [
+                100,
+                460
+            ],
+            "trade_b": [
+                415,
+                460
+            ],
+            "manufacture_a": [
+                730,
+                460
+            ],
+            "manufacture_b": [
+                100,
+                780
+            ],
+            "manufacture_c": [
+                415,
+                780
+            ],
+            "manufacture_d": [
+                730,
+                780
+            ],
+            "dormitory_a": [
+                1075,
+                460
+            ],
+            "dormitory_b": [
+                1235,
+                620
+            ],
+            "dormitory_c": [
+                1075,
+                780
+            ],
+            "dormitory_d": [
+                1235,
+                940
+            ],
+            "meeting": [
+                1840,
+                300
+            ],
+            "office": [
+                1890,
+                615
+            ]
+        },
+        "member": {
+            "first": [
+                735,
+                295
+            ],
+            "second": [
+                735,
+                695
+            ],
+            "third": [
+                945,
+                295
+            ],
+            "fourth": [
+                945,
+                695
+            ],
+            "fifth": [
+                1175,
+                295
+            ]
+        }
+    },
+    "member_count": {
+        "center": 5,
+        "trade_a": 3,
+        "trade_b": 3,
+        "manufacture_a": 2,
+        "manufacture_b": 2,
+        "manufacture_c": 2,
+        "manufacture_d": 2,
+        "dormitory_a": 5,
+        "dormitory_b": 5,
+        "dormitory_c": 5,
+        "dormitory_d": 5,
+        "meeting": 2,
+        "office": 1
+    }
+}
