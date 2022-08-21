@@ -148,7 +148,7 @@ def main():
     # Get resolution
     w,h = device().get_current_resolution()
 
-    start_game()
+    #start_game()
     mission_complete(False)
     home_receive()
     mission_quest()

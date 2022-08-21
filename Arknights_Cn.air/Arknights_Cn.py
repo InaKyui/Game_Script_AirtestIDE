@@ -1,6 +1,6 @@
 # Encoding utf8
 # Python 3.7.7
-# Update in 2022/8/7
+# Update in 2022/8/21
 # Author by Yui_Roma
 
 import json
@@ -48,8 +48,7 @@ def start_game():
         if exists(Template("login_close.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
             touch(Template("login_close.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
             time.sleep(3)
-        else:
-            break
+        else: break
 
 def source_center():
     # Source Center
@@ -80,8 +79,8 @@ def change_member(room):
         time.sleep(3)
     touch(Template("member_release.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
     time.sleep(1.5)
-    if exists(Template("member_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
-        touch(Template("member_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+    if exists(Template("button_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+        touch(Template("button_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
         time.sleep(1.5)
     # Deployment of members
     touch(Template("member_deployment.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
@@ -101,12 +100,17 @@ def change_member(room):
     if member_count >= 5:
         click(coordinate["member"]["fifth"])
         time.sleep(1)
-    touch(Template("member_confirm.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
-    time.sleep(3)
-    if "dormitory" in room:
-        if exists(Template("member_confirm_2.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
-            touch(Template("member_confirm_2.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+    for i in range(3):
+        exist_count = 0
+        if exists(Template("member_confirm.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+            touch(Template("member_confirm.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
             time.sleep(3)
+            exist_count = exist_count + 1
+        if exists(Template("member_confirm_double.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+            touch(Template("member_confirm_double.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+            exist_count = exist_count + 1
+        if exist_count == 0:
+            break
     # Back to home page
     touch(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
     time.sleep(5)
@@ -161,8 +165,11 @@ def infrastructure():
     # Office
     change_member("office")
     # Back to home page
-    touch(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
-    time.sleep(5)
+    for i in range(5):
+        if exists(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+            touch(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+            time.sleep(3)
+        else: break
 
 def daily_quest():
     # Sanity
@@ -211,8 +218,102 @@ def daily_quest():
         if exists(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
             touch(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
             time.sleep(3)
+        else: break
+
+def recruit_check_tag():
+    tag_selected = None
+    # Tag format = [str/[list]]
+    tag_list = [
+        # Star 6
+        Template("recruit_tag_top_senior.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        # Star 5
+        #Template("recruit_tag_senior.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        #Template("recruit_tag_summon.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        # Star 4
+        Template("recruit_tag_weaken.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        Template("recruit_tag_erupt.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        Template("recruit_tag_resurrection.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        Template("recruit_tag_move.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)),
+        Template("recruit_tag_special.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))
+    ]
+    for tag in tag_list:
+        # Check combo tag
+        if isinstance(tag, list):
+            match_flag = False
+            for t in tag:
+                if exists(t):
+                    if t == tag[-1]:
+                        # All tag matched.
+                        match_flag = True
+                    else: continue
+                else: break
+            # Tag matched & Select combo tag
+            if match_flag:
+                for t in tag:
+                    touch(t)
+                    time.sleep(1)
+                tag_selected = tag
+                time.sleep(1.5)
+                break
+        # Check single tag
         else:
-            break
+            if exists(tag):
+                if tag == Template("recruit_tag_top_senior.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)):
+                    input("[Recruit] Top senior. Please check.")
+                    time.sleep(1)
+                    continue
+                touch(tag)
+                time.sleep(1.5)
+                tag_selected = tag
+                time.sleep(3)
+                break
+    # Select default tag
+    if tag_selected == None:
+        click(config["coordinate"]["recruit"]["default_tag"])
+
+def recruit_center():
+    # Enter recruit center
+    touch(Template("entrance_recruit.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+    time.sleep(3)
+    # Check accelerate status
+    for i in range(4):
+        if exists(Template("recruit_accelerate.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+            touch(Template("recruit_accelerate.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+            time.sleep(1.5)
+            if exists(Template("button_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+                touch(Template("button_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+                time.sleep(1.5)
+            else: break
+        else: break
+    # Handle old recruit at first
+    for i in range(4):
+        if exists(Template("recruit_complete.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+            touch(Template("recruit_complete.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+            time.sleep(5)
+            touch(Template("button_skip.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+            time.sleep(7)
+            click(config["coordinate"]["recruit"]["blank"])
+            time.sleep(3)
+        else: break
+    # New recruit order
+    index = ["first", "second", "third", "fourth"]
+    for i in range(len(index)):
+        click(config["coordinate"]["recruit"][index[i]])
+        time.sleep(3)
+        click(config["coordinate"]["recruit"]["max_time"])
+        time.sleep(1.5)
+        recruit_check_tag()
+        time.sleep(3)
+        touch(Template("recruit_ensure.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+        time.sleep(1.5)
+
+
+    # Back to home page
+    for i in range(5):
+        if exists(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080))):
+            touch(Template("button_back.png", record_pos=(-0.001, 0.115), resolution=(1920, 1080)))
+            time.sleep(3)
+        else: break
 
 def mission_complete():
     # Mission
@@ -243,13 +344,14 @@ def daily_mission():
     source_center()
     infrastructure()
     daily_quest()
+    recruit_center()
     mission_complete()
     
 if __name__ == '__main__':
     # Load global config
     config = load_config()
     
-    #start_game()
-    #daily_mission()
+    start_game()
+    daily_mission()
     #event_quest()
     

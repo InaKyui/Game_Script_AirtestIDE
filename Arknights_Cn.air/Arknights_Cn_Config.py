@@ -1,6 +1,6 @@
 # Encoding utf8
 # Python 3.7.7
-# Update in 2022/8/7
+# Update in 2022/8/21
 # Author by Yui_Roma
 
 import os
@@ -33,6 +33,14 @@ coordinate["member"]["second"] = [735,695]
 coordinate["member"]["third"] = [945,295]
 coordinate["member"]["fourth"] = [945,695]
 coordinate["member"]["fifth"] = [1175,295]
+coordinate["recruit"] = {}
+coordinate["recruit"]["first"] = [485,435]
+coordinate["recruit"]["second"] = [1435,435]
+coordinate["recruit"]["third"] = [485,850]
+coordinate["recruit"]["fourth"] = [1435,850]
+coordinate["recruit"]["blank"] = [5,5]
+coordinate["recruit"]["max_time"] = [675,440]
+coordinate["recruit"]["default"] = [675,570]
 config["coordinate"] = coordinate
 
 member_count = {}
